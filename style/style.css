@@ -1,0 +1,122 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : Border-box;
+    font-family: sans-serif;
+    }
+
+   
+.main-container-content{
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.primary-content-container > .card {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.navbar-second {
+    width: 100%;
+    overflow: auto;
+    background-color: #ffffff;
+    border-bottom:ridge;
+
+}
+
+.navbar-container-second {
+    list-style-type:none;
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 10%;
+
+  }
+
+  .navbar-second li{
+    text-align: center;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #888888;
+  }
+
+  li a:link{
+    text-decoration: none;
+  }
+
+  body{
+    background-color: #F4F8FB;
+  }
+
+  .profil-container{
+    display: flex;
+    background-color: #ffffff;
+    margin: 40px;}
+
+.profil-container > section {
+margin: 10px;
+  padding: 20px;
+}
+
+.item-profil .button-item-profil{
+    display: flex;
+    /* justify-content:space-evenly; */
+
+}
+
+.item-profil .button-item-profil > button{
+    
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.item-profil .button-item-profil .button-edit{
+    background-color: #0102E8;
+    color: #ffffff;
+    border: none;
+    margin-right: 20px;
+}
+
+.item-profil .button-item-profil .button-resume{
+    background-color: #ffffff;
+    color: #86997B;
+    border-color: #86997B;
+}
+
+.item-profil p{
+    font-size: 14px;
+    color: #CBCBCB;
+}
+
+.item-label-detail{
+    font-weight: bold;
+}
+
+.form-container{
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: column;
+    margin: 40px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.form-container > input{
+    height: 25px;
+}
+
+.form-container > button{
+    background-color: #29701A;
+    color: #ffffff;
+    border: none; 
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer{
+    padding: 11px;
+}
