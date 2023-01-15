@@ -28,9 +28,13 @@
                 <img src="images/logo.jpg" alt="logo developer profil" srcset="" height=175px>
             </section>
             <section class="item-profil">
-                <h1>Nabilah Aidahnanda Ganari</h1>
+                <h1 id="printNama">
+                    Nabilah Aidahnanda Ganari
+                </h1>
                 <br>
-                <p>Front End developer</p>
+                <p id="printRole">
+                    Front End developer
+                </p>
                 <br>
                 <div class="button-item-profil">
                     <button type="button" class="button-edit">Edit</button>
@@ -49,42 +53,58 @@
                 <p>Email</p>
             </section>
             <section class="item-placeholder-detail">
-                <p>Full Time</p>
+                <p id="printAvailability">Full Time</p>
                 <br>
-                <p>23</p>
+                <p id="printUsia">23</p>
                 <br>
-                <p>Jakarta</p>
+                <p id="printLokasi">Jakarta</p>
                 <br>
-                <p>2</p>
+                <p id="printYearexprnc">2</p>
                 <br>
-                <p>nabilahganari@gmail.com</p>
+                <p id="printEmail">nabilahganari@gmail.com</p>
             </section>
         </div>
         <form action="" class="form-container">
             <label for="nama">Nama</label>
-            <input type="text" name='nama'>
+            <input type="text" id='nama' name='nama' onchange='printNama()'>
             <br>
             <label for="role">Role</label>
-            <input type="text" name='role'>
+            <input type="text" id='role' name='role' onchange='printNama()'>
             <br>
             <label for="availability">Availability</label>
-            <input type="text" name='availability'>
+            <input type="text" id='availability' name='availability' onchange='printNama()'>
             <br>
             <label for="usia">Usia</label>
-            <input type="text" name='usia'>
+            <input type="text" id='usia' name='usia' onchange='printNama()'>
             <br>
             <label for="lokasi">Lokasi</label>
-            <input type="text" name='lokasi'>
+            <input type="text" id='lokasi' name='lokasi' onchange='printNama()'>
             <br>
             <label for="yearexprnc">Year Experience</label>
-            <input type="text" name='yearexprnc'>
+            <input type="text" id='yearexprnc' name='yearexprnc' onchange='printNama()'>
             <br>
             <label for="email">Email</label>
-            <input type="text" name='email'>
+            <input type="text" id='email' name='email' onchange='printNama()'>
             <br>
-            <button type="button">Submit</button>
+            <button onclick="printHasil()" type="button">Submit</button>
 
         </form>
+
+        <!-- <input type="text" id="nama" name="nama" onchange="printNama()"/>
+            <button onclick="printNama()">Print Nama</button>
+            <div id="hasilNama"></div>
+         -->
+        <script>
+            function printHasil() {
+                document.getElementById("printNama").innerHTML = document.getElementById("nama").value
+                document.getElementById("printRole").innerHTML = document.getElementById("role").value
+                document.getElementById("printAvailability").innerHTML = document.getElementById("availability").value
+                document.getElementById("printUsia").innerHTML = document.getElementById("usia").value
+                document.getElementById("printLokasi").innerHTML = document.getElementById("lokasi").value
+                document.getElementById("printYearexprnc").innerHTML = document.getElementById("yearexprnc").value
+                document.getElementById("printEmail").innerHTML = document.getElementById("email").value
+            }
+        </script>
 
 
     </main>

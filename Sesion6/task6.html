@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6 Looping</title>
+</head>
+
+<body>
+    <!-- Buatlah sebuah perulangan yang akan menampilkan huruf O seperti dibawah ini: OOOOOOOO OOOO OOOOTapi dengan syarat, kamu harus menggunakan looping untuk menampilkan bentuk di bawah ini! Be creative!Pikirkan bagaimana kalau kita harus menampilkan 100 "O" ke samping dengan 100 baris?Challenge -->
+
+    <script>
+        let output = ""
+
+        for (let k = 1; k <= 4; k++) {
+            let str = ""
+            for (let i = 1; i <= 4; i++) {
+                str += '*'
+            }
+            output += `${str}\n`
+        }
+
+        console.log(output)
+    </script>
+</body>
+
+</html>

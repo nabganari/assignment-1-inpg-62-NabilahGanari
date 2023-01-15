@@ -47,30 +47,38 @@
         </div>
         <form action="">
             <label for="nama">Nama</label>
-            <input type="text" name='nama'>
+            <input type="text" id='nama' name='nama' onchange='printNama()'>
             <br>
             <label for="role">Role</label>
-            <input type="text" name='role'>
+            <input type="text" id='role' name='role' onchange='printNama()'>
             <br>
             <label for="availability">Availability</label>
-            <input type="text" name='availability'>
+            <input type="text" id='availability' name='availability' onchange='printNama()'>
             <br>
             <label for="usia">Usia</label>
-            <input type="text" name='usia'>
+            <input type="text" id='usia' name='usia' onchange='printNama()'>
             <br>
             <label for="lokasi">Lokasi</label>
-            <input type="text" name='lokasi'>
+            <input type="text" id='lokasi' name='lokasi' onchange='printNama()'>
             <br>
             <label for="yearexprnc">Year Experience</label>
-            <input type="text" name='yearexprnc'>
+            <input type="text" id='yearexprnc' name='yearexprnc' onchange='printNama()'>
             <br>
             <label for="email">Email</label>
-            <input type="text" name='email'>
+            <input type="text" id='email' name='email' onchange='printNama()'>
             <br>
-            <button type="button"></button>
+            <button onclick="printHasil() type=" button"></button>
 
 
-
+            <!-- <input type="text" id="nama" name="nama" onchange="printNama()"/>
+            <button onclick="printNama()">Print Nama</button>
+            <div id="hasilNama"></div>
+        
+            <script>
+                function printNama() {
+                    document.getElementById("hasilNama").innerHTML = document.getElementById("nama").value 
+                }
+            </script> -->
 
 
         </form>
